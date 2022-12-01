@@ -1,0 +1,44 @@
+﻿<Window x:Class="Kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Grid.ColumnSpan="4" Margin="10,10,10,10" TextWrapping="Wrap" Text="Wpisz ..." x:Name = "Wpis" IsReadOnly="True"/>
+        <Button x:Name = "siedem" Content="7" Margin="5,5,5,5" Grid.Row="1" Grid.Column="0" Click="siedem_Click"/>
+        <Button x:Name = "osiem" Content="8" Margin="5,5,5,5" Grid.Row="1" Grid.Column="1" Click="osiem_Click"/>
+        <Button x:Name = "dziewiec" Content="9" Margin="5,5,5,5" Grid.Row="1" Grid.Column="2" Click="dziewiec_Click"/>
+        <Button x:Name = "plus" Content="+" Margin="5,5,5,5" Grid.Row="1" Grid.Column="3" Click="plus_Click"/>
+        <Button x:Name = "cztery" Content="4" Margin="5,5,5,5" Grid.Row="2" Grid.Column="0" Click="cztery_Click"/>
+        <Button x:Name = "piec" Content="5" Margin="5,5,5,5" Grid.Row="2" Grid.Column="1" Click="piec_Click"/>
+        <Button x:Name = "szesc" Content="6" Margin="5,5,5,5" Grid.Row="2" Grid.Column="2" Click="szesc_Click"/>
+        <Button x:Name = "minus" Content="-" Margin="5,5,5,5" Grid.Row="2" Grid.Column="3" Click="minus_Click"/>
+        <Button x:Name = "jeden" Content="1" Margin="5,5,5,5" Grid.Row="3" Grid.Column="0" Click="jeden_Click"/>
+        <Button x:Name = "dwa" Content="2" Margin="5,5,5,5" Grid.Row="3" Grid.Column="1" Click="dwa_Click"/>
+        <Button x:Name = "trzy" Content="3" Margin="5,5,5,5" Grid.Row="3" Grid.Column="2" Click="trzy_Click"/>
+        <Button x:Name = "razy" Content="*" Margin="5,5,5,5" Grid.Row="3" Grid.Column="3" Click="razy_Click"/>
+        <Button x:Name = "zero" Content="0" Margin="5,5,5,5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Click="zero_Click"/>
+        <Button x:Name = "podzil" Content="/" Margin="5,5,5,5" Grid.Row="4" Grid.Column="3" Click="podzil_Click"/>
+        <Button x:Name = "przecinek" Content="," Margin="5,5,5,5" Grid.Row="4" Grid.Column="2" Click="przecinek_Click"/>
+        <Button x:Name = "rowna" Content="=" Margin="5,5,5,5" Grid.Row="5" Grid.ColumnSpan="2" Click="rowna_Click"/>
+        <Button x:Name = "clear" Content="c" Margin="5,5,5,5" Grid.Row="5" Grid.Column="2" Click="clear_Click"/>
+        <Button x:Name = "pierw" Content="Pierw" Margin="5,5,5,5" Grid.Row="5" Grid.Column="3" Click="pierw_Click"/>
+    </Grid>
+</Window>
